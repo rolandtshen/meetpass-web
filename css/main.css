@@ -79,6 +79,7 @@ textarea:focus {
   margin-left: auto;
   padding: 0 15px;
   max-width: 1080px; }
+
   .container:after {
     content: " ";
     /* Older browser do not support empty content */
@@ -2332,95 +2333,102 @@ button.button {
         max-height: 16px; } }
 
         /* Photo Banner */
-        .photobanner, .photobanner2 {
-            height: 233px;
-            width: 3550px;
-            margin-bottom: 5px;
-            font-size: 0;
-        }
 
-        .photobanner img, .photobanner2 img {
-        	margin-bottom: 10px;
-        	margin-right: 5px;
-        	height: 200px;
-        	width: 300px;
-        }
+.photobanner-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px auto;
+    background: white;
+}
 
-        .photobanner img  {
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            -ms-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-        }
+.photobanner, .photobanner2 {
+    height: 200px;
+    width: 3440px;
+    margin-bottom: 5px;
+    font-size: 0;
+}
 
+.photobanner img, .photobanner2 img {
+	margin-bottom: 10px;
+	margin-right: 5px;
+	height: 200px;
+	width: 344px;
+}
 
-        /*keyframe animations*/
-        .first {
-            -webkit-animation: bannermove 30s linear infinite;
-               -moz-animation: bannermove 30s linear infinite;
-                -ms-animation: bannermove 30s linear infinite;
-                 -o-animation: bannermove 30s linear infinite;
-                    animation: bannermove 30s linear infinite;
-        }
+.photobanner img  {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
-        @keyframes "bannermove" {
-         0% {margin-left: 0px;}
-         100% {margin-left: -2130px;}
-        }
+/*keyframe animations*/
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+       -moz-animation: bannermove 30s linear infinite;
+        -ms-animation: bannermove 30s linear infinite;
+         -o-animation: bannermove 30s linear infinite;
+            animation: bannermove 30s linear infinite;
+}
 
-        @-moz-keyframes bannermove {
-         0% {margin-left: 0px;}
-         100% {margin-left: -2130px;}
-        }
+@keyframes "bannermove" {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2094px;}
+}
 
-        @-webkit-keyframes "bannermove" {
-         0% {margin-left: 0px;}
-         100% {margin-left: -2130px;}
-        }
+@-moz-keyframes bannermove {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2094px;}
+}
 
-        @-ms-keyframes "bannermove" {
-         0% {margin-left: 0px;}
-         100% {margin-left: -2130px;}
-        }
+@-webkit-keyframes "bannermove" {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2094px;}
+}
 
-        @-o-keyframes "bannermove" {
-         0% {margin-left: 0px;}
-         100% {margin-left: -2130px;}
-        }
+@-ms-keyframes "bannermove" {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2094px;}
+}
 
-        .second {
-            -webkit-animation: bannermoves 30s linear infinite;
-               -moz-animation: bannermoves 30s linear infinite;
-                -ms-animation: bannermoves 30s linear infinite;
-                 -o-animation: bannermoves 30s linear infinite;
-                    animation: bannermoves 30s linear infinite;
-        }
+@-o-keyframes "bannermove" {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2094px;}
+}
 
-        @keyframes "bannermoves" {
-         0% {margin-left: -2130px;}
-         100% {margin-left: 0px;}
-        }
+.second {
+    -webkit-animation: bannermoves 30s linear infinite;
+       -moz-animation: bannermoves 30s linear infinite;
+        -ms-animation: bannermoves 30s linear infinite;
+         -o-animation: bannermoves 30s linear infinite;
+            animation: bannermoves 30s linear infinite;
+}
 
-        @-moz-keyframes bannermoves {
-         0% {margin-left: -2130px;}
-         100% {margin-left: 0px;}
-        }
+@keyframes "bannermoves" {
+ 0% {margin-left: -2094px;}
+ 100% {margin-left: 0px;}
+}
 
-        @-webkit-keyframes "bannermoves" {
-         0% {margin-left: -2130px;}
-         100% {margin-left: 0px;}
-        }
+@-moz-keyframes bannermoves {
+ 0% {margin-left: -2094px;}
+ 100% {margin-left: 0px;}
+}
 
-        @-ms-keyframes "bannermoves" {
-         0% {margin-left: -2130px;}
-         100% {margin-left: 0px;}
-        }
+@-webkit-keyframes "bannermoves" {
+ 0% {margin-left: -2094px;}
+ 100% {margin-left: 0px;}
+}
 
-        @-o-keyframes "bannermoves" {
-         0% {margin-left: -2130px;}
-         100% {margin-left: 0px;}
-        }
+@-ms-keyframes "bannermoves" {
+ 0% {margin-left: -2094px;}
+ 100% {margin-left: 0px;}
+}
+
+@-o-keyframes "bannermoves" {
+ 0% {margin-left: -2094px;}
+ 100% {margin-left: 0px;}
+}
 
 .photos-01 {
   padding-top: 70px;
