@@ -1411,8 +1411,7 @@ button.button {
 .feature__icon {
   vertical-align: middle;
   margin-right: 15px;
-  max-height: 40px;
-  max-width: 40px;
+  height: 100%;
   width: 100%; }
 
 .feature__link {
@@ -3739,7 +3738,7 @@ button.button {
   box-shadow: 0 12px 44px 0 rgba(0, 0, 0, 0.1); }
 
 .pricing-01 {
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 70px;
   text-align: center; }
 
@@ -6664,7 +6663,7 @@ button.button {
 .features-01__item {
   width: 30%;
   max-width: 350px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   padding-right: 30px; }
   @media (max-width: 990px) {
     .features-01__item {
