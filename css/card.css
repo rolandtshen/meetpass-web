@@ -1,38 +1,13 @@
-body {
-  background-color: #F1F0F0;
+.card {
+  max-width: 70%;
+  height: 90px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 14px;
 }
 
-.accounts {
-  list-style: none;
-  margin: auto;
-  padding: 0;
-  width: 70%;
-  text-align: center;
-}
-
-.accounts li {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  overflow: hidden;
-  background-color: #FFF;
-  position: relative;
-}
-
-.logo {
-  height: 40px;
-  max-height: 60px;
-  vertical-align: middle;
-}
-
-.username {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 20pt;
-  vertical-align: middle;
-  padding: 10px;
-  color: #111;
-  background: #fff;
-  transition: all .15s;
-  border-radius: 3px;
+img {
+  height: 50px;
+  width: 50px;
+  margin-right: 14px;
 }
