@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MeetPass - Roland</title>
+  <title>{{title}}</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/card.css">
 </head>
@@ -15,10 +15,9 @@
   <div class="inner">
     <div class="profile">
       <div class="profile-inner">
-        <a href="https://facebook.com/rolandtshen" class="link"><img src="img/logos/facebook.png">rolandtshen</a>
-        <a href="https://facebook.com/rolandtshen" class="link"><img src="img/logos/facebook.png">rolandtshen</a>
-        <a href="https://facebook.com/rolandtshen" class="link"><img src="img/logos/facebook.png">rolandtshen</a>
-        <a href="https://facebook.com/rolandtshen" class="link"><img src="img/logos/facebook.png">rolandtshen</a>
+        {{#each accounts}}
+          <a href="https://facebook.com/rolandtshen" class="link"><img src="img/logos/{{this.platform}}.png">{{this.handle}}</a>
+        {{/each}}
       </div>
     </div>
   </div>
