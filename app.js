@@ -20,10 +20,18 @@ app.get('/', function (req, res) {
 
 app.get('/:cID', function (req, res) {
   var cID = req.params.cID;
+  var card;
+  request(`https://meetpass-server.herokuapp.com/cards/1/${cID}`, function(error, response, body) {
+    if(!error && response.statusCode == 200) {
+      card = JSON.parse(body);
+      console.log(card);
+    }
+  });
+
   request(`https://meetpass-server.herokuapp.com/cards/1/${cID}/accounts`, function (error, response, body) {
     if(!error && response.statusCode == 200) {
       var jsonObject = JSON.parse(body)
-      res.render("card", { title: `MeetPass Card`, accounts: jsonObject});
+      res.render("card", { title: `MeetPass Card`, accounts: jsonObject, card: card});
       console.log(jsonObject);
     }
     else {
