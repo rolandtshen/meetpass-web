@@ -20,27 +20,17 @@ app.get('/', function (req, res) {
 
 app.get('/:cID', function (req, res) {
   var cID = req.params.cID;
-  var card;
-  var title;
 
   request(`https://meetpass-server.herokuapp.com/cards/1/${cID}`, function(error, response, body) {
     if(!error && response.statusCode == 200) {
-      card = JSON.parse(body);
-      title = card.cardName;
-    }
-  });
-
-  request(`https://meetpass-server.herokuapp.com/cards/1/${cID}/accounts`, function (error, response, body) {
-    if(!error && response.statusCode == 200) {
-      var jsonObject = JSON.parse(body)
-      res.render("card", { title: `MeetPass - ${title}`, accounts: jsonObject, card: card});
-      console.log(jsonObject);
+      var card = JSON.parse(body);
+      res.render("card", { title: `MeetPass - ${card.cardName}`, accounts: card.accounts, card: card});
     }
     else {
-      //Make a 404 page and insert here
-      res.send("This card does not exist.");
+        //Make a 404 page and insert here
+        res.send("This card does not exist.");
     }
-  })
+  });
 });
 
 app.listen(app.get('PORT'), function () {
