@@ -17,7 +17,7 @@ app.set('view engine', '.hbs');
 
 app.use(express.static(path.join(__dirname, 'assets')));
 app.use(sslRedirect());
-app.use(favicon(path.join(__dirname, 'img', 'branding', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, 'assets', 'img', 'branding', 'favicon.ico')))
 
 
 app.get('/', function(req, res) {
