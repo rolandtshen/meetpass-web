@@ -1,3 +1,17 @@
+.intro img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.textlogo {
+  float: left;
+  padding-right: 20px;
+  width: 60px;
+  height: 60px;
+}
+
 .highlight-clean {
   color: #313437;
   background-color: #fff;
