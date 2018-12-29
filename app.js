@@ -26,6 +26,14 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/privacy', function(req, res) {
+  res.render("privacy");
+});
+
+app.get('/terms', function(req, res) {
+  res.render("terms");
+});
+
 app.get('/:cID', function(req, res) {
   var cID = req.params.cID;
 
