@@ -86,7 +86,7 @@ app.get('/:cID', function(req, res) {
     }
     else {
       //Make a 404 page and insert here
-      res.send("This card does not exist.");
+      res.render("404");
     }
   });
 });
