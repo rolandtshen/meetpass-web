@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const path = require('path');
-// var sslRedirect = require('heroku-ssl-redirect');
+var sslRedirect = require('heroku-ssl-redirect');
 var favicon = require('serve-favicon')
 const handlebars = require('express-handlebars');
 
@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', '.hbs');
 
 app.use(express.static(path.join(__dirname, 'assets')));
-// app.use(sslRedirect());
+app.use(sslRedirect());
 app.use(favicon(path.join(__dirname, 'assets', 'img', 'branding', 'favicon.ico')))
 
 
